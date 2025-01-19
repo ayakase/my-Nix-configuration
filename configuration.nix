@@ -106,12 +106,14 @@
   ];
 
   
- i18n.inputMethod = {
-  enabled = "ibus";
+i18n.inputMethod = {
+  type = "ibus"; # Updated from `enabled`
+  enable = true; # Explicit enable flag
   ibus.engines = with pkgs.ibus-engines; [
     bamboo
   ];
-  };
+};
+
  # Enable PostgreSQL service
   services.postgresql = {
     enable = true;

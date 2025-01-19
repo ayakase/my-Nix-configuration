@@ -105,6 +105,13 @@
   gnomeExtensions.caffeine
   ];
 
+  
+ i18n.inputMethod = {
+  enabled = "ibus";
+  ibus.engines = with pkgs.ibus-engines; [
+    bamboo
+  ];
+  };
  # Enable PostgreSQL service
   services.postgresql = {
     enable = true;

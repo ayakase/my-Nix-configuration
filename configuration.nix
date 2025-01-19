@@ -103,6 +103,7 @@
   cmatrix
   btop
   gnomeExtensions.caffeine
+  gh
   ];
 
   
